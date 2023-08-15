@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation style */
+nav {
+  background-color: rgb(245, 221, 102);
+  display: flex;
+  padding: 1%;
+  border-bottom: 3px solid maroon;
+}
+nav .logo {
+  color: maroon;
+  padding-left: 10px;
+  cursor: pointer;
+}
+nav .menuButton {
+  display: none;
+  padding-right: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+  nav li {
+    display: none;
+  }
+  nav .menuButton {
+    display: block;
+  }
+}
+nav li:hover a {
+  color: maroon;
+}
+nav .menuButton:hover {
+  color: maroon;
+  cursor: pointer;
+}
+nav .right {
+  margin-left: auto;
+}

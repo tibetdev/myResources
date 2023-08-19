@@ -18,10 +18,17 @@
   }
 }
 /* Navigation style */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  width: 100%;
+}
 .navContainer {
   background-color: rgb(245, 221, 102);
   display: flex;
   padding: 1%;
+  position: sticky;
 
   .logo {
     color: maroon;
@@ -80,4 +87,25 @@
 .loading {
   border-bottom: 5px solid maroon;
   animation: loading 3s linear;
+}
+
+// this is for practices
+header {
+  display: flex;
+  position: relative;
+  height: 100svh;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  overflow: hidden;
+  .importantInfo {
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    background-color: maroon;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+  }
 }
